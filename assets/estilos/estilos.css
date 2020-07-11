@@ -1,0 +1,91 @@
+/**  GLOBALES **/
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* Reset para REMS - 62.5% = 10px de 16px */
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    font-size: 1.6rem;
+    background-color: rgba(255, 99, 71, 0.5);
+}
+
+img{ /* Imagenes responsivas */
+    max-width: 100%;
+}
+.contenedor {
+    /* Toma todo el espacio disponible, siempre y cuando no se pase de 1200px */
+    max-width: 120rem;
+    width: 95%;
+    margin: 0 auto;
+}
+/* HEADER */
+header .cabecera{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+header .cabecera a{
+    flex: 0 0 calc(50% - 5rem);
+}
+
+@media (min-width: 768px) {
+    header .cabecera a{
+        flex: 0 0 calc(30% - 5rem);
+    }
+}
+@media (min-width: 1023px) {
+    header .cabecera a{
+        flex: 0 0 calc(20% - 5rem);
+    }
+    
+}
+.libro{
+    display: flex;
+    justify-content: center;
+}
+.libro-git{
+    color: black;
+    text-decoration: none;
+    font-size: 4rem;
+    font-family: 'Grenze Gotisch', cursive;
+    font-weight: 900;
+    padding: 1.5rem;
+}
+.libro-git i{
+    margin-right: 20px;
+}
+@media (min-width: 768px) {
+    .libro-git{
+        font-size: 4.5rem;
+    }
+}
+@media (min-width: 1023px) {
+    .libro-git{
+        font-size: 5.5rem;
+    }
+}
+nav.que-son{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1.3rem;
+    
+}
+nav.que-son a{
+    color: black;
+    text-decoration: none;
+    font-family: 'Grenze Gotisch', cursive;
+    font-weight: 900;
+    font-size: 3.5rem;
+}
+nav.que-son a:hover{
+    text-decoration: underline;
+}
