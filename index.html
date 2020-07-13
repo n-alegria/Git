@@ -1,38 +1,146 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-    <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@400;700;900&display=swap" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/img/icon.ico" type="image/x-icon">
     <link rel="stylesheet" href="assets/estilos/reset.css">
     <link rel="stylesheet" href="assets/estilos/estilos.css">
     <title>GIT</title>
 </head>
+
 <body>
     <header class="contenedor">
         <div class="cabecera">
             <a href="https://github.com/n-alegria/" title="GitHub"><img src="assets/img/git.png" alt="Logo Git"></a>
-            <a href="https://www.youtube.com/watch?v=OF--50_hcTU" title="Video Octocat"><img src="assets/img/octocat.png" alt="Octocat"></a>
+            <a href="https://www.youtube.com/watch?v=OF--50_hcTU" title="Video Octocat"><img
+                    src="assets/img/octocat.png" alt="Octocat"></a>
         </div>
-        <div class="libro">
-            <a class="libro-git" href="assets/download/Pro Git - 2014.pdf" target="_blank"><i class="fas fa-file-download"></i>Pro Git - 2014</a>
+        <div class="libro-git">
+            <a href="assets/download/Pro Git - 2014.pdf" target="_blank"><i
+                    class="fas fa-file-download"></i>Pro Git - 2014</a>
         </div>
-        <nav class="que-son">
-            <a href="#">¿Qué es Git?</a>
-            <a href="#">¿Y GitHub?</a>
-        </nav>
-        <nav>
-
-            <a href="#"></a>
-            <a href="#"></a>
-            <a href="#"></a>
-            <a href="#"></a>
-            <a href="#"></a>
-            <a href="#"></a>
-            <a href="#"></a>
-            <a href="#"></a>
-        </nav>
-    </header>
+    </header><!-- header -->
+    <main class="contenedor">
+        <section class="consola">
+            <h2>Comandos de consola</h2>
+            <div class="consola-lista">
+                <dl>
+                    <dt>Ubicacion actual</dt>
+                    <dd>Linux:<span class="comando">pwd</span></dd>
+                    <dd>Windows:<span class="comando">cd</span></dd>
+                    <dt>Cambiar directorio</dt>
+                    <dd>Linux:<span class="comando">cd</span></dd>
+                    <dd>Windows:<span class="comando">cd</span></dd>
+                    <dt>Listar</dt>
+                    <dd>Linux:<span class="comando">ls</span< /dd>
+                    <dd>Windows:<span class="comando">dir</span< /dd>
+                    <dt>Copiar</dt>
+                    <dd><span class="sistema">Linux:</span><span class="comando">cp < origen>
+                                < destino></span></dd>
+                    <dd><span class="Windows">Linux:</span><span class="comando">copy < origen>
+                                < destino></span></dd>
+                    <dt>Mover - Renombrar</dt>
+                    <dd>Linux:<span class="comando">mv < origen>
+                                < destino></span></dd>
+                    <dd>Windows:<span class="comando">move < origen>
+                                < destino></span></dd>
+                    <dt>Eliminar archivo</dt>
+                    <dd>Linux:<span class="comando">rm</span></dd>
+                    <dd>Windows:<span class="comando">del</span></dd>
+                    <dt>Eliminar carpetas</dt>
+                    <dd>Linux:<span class="comando">rmdir</span></dd>
+                    <dd>Windows:<span class="comando">rd</span></dd>
+                    <dt>Limpiar pantalla</dt>
+                    <dd>Linux:<span class="comando">clear</span></dd>
+                    <dd>Windows:<span class="comando">cls</span></dd>
+                </dl>
+            </div>
+            <table>
+                <tr>
+                    <th>Comando</th>
+                    <th>Linux</th>
+                    <th>Windows</th>
+                </tr>
+                <tr>
+                    <td>Ubicacion actual</td>
+                    <td>pwd</td>
+                    <td>cd</td>
+                </tr>
+                <tr>
+                    <td>Cambiar directorio</td>
+                    <td>cd</td>
+                    <td>cd</td>
+                </tr>
+                <tr>
+                    <td>Listar</td>
+                    <td>ls</td>
+                    <td>dir</td>
+                </tr>
+                <tr>
+                    <td>Copiar</td>
+                    <td>cp <span>< origen>< destino></span></td>
+                    <td>copy <span>< origen>< destino></span></td>
+                </tr>
+                <tr>
+                    <td>Mover - Renombrar</td>
+                    <td>mv <span>< origen>< destino></span></td>
+                    <td>move <span>< origen>< destino></span></td>
+                </tr>
+                <tr>
+                    <td>Eliminar archivo</td>
+                    <td>rm</td>
+                    <td>del</td>
+                </tr>
+                <tr>
+                    <td>Eliminar directorio</td>
+                    <td>rmdir</td>
+                    <td>rd</td>
+                </tr>
+                <tr>
+                    <td>Limpiar pantalla</td>
+                    <td>clear</td>
+                    <td>cls</td>
+                </tr>
+            </table><!-- table -->
+        </section><!-- consola -->
+        <section class="git-basico">
+            <h2>Comandos basicos Git</h2>
+            <table>
+                <tr>
+                    <th>Comando</th>
+                    <th>Uso</th>
+                </tr>
+                <tr>
+                    <td>git init</td>
+                    <td>Inicializa un repositorio</td>
+                </tr>
+                <tr>
+                    <tr>
+                        <td>git clone < url ></td>
+                        <td>Clona un repositorio remoto</td>
+                    </tr>
+                    <td>git status</td>
+                    <td>Comprueba cambios en el 'workind directory'</td>
+                </tr>
+                <tr>
+                    <td>git add .</td>
+                    <td>Prepara los cambios, los añade al 'staging area'</td>
+                </tr>
+                <tr>
+                    <td>git commit -m 'mensaje'</td>
+                    <td>Añade mensaje capturando los cambios</td>
+                </tr>
+                <tr>
+                    <td>git push origin master</td>
+                    <td>Envía los cambios al repositorio remoto</td>
+                </tr>
+            </table>
+        </section>
+    </main>
 </body>
+
 </html>

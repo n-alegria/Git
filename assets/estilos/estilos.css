@@ -3,89 +3,102 @@
 *,
 *:before,
 *:after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
-    box-sizing: border-box;
-    font-size: 62.5%; /* Reset para REMS - 62.5% = 10px de 16px */
+  box-sizing: border-box;
+  font-size: 62.5%; /* Reset para REMS - 62.5% = 10px de 16px */
 }
 
 body {
-    font-family: "Lato", sans-serif;
-    font-size: 1.6rem;
-    background-color: rgba(255, 99, 71, 0.5);
+  font-family: "Lato", sans-serif;
+  font-size: 1.6rem; /* 1rem = 10px */
 }
-
-img{ /* Imagenes responsivas */
-    max-width: 100%;
+h2{
+  margin: 0;
+  padding: 1rem 0 1rem 0;
+  font-size: 3.3rem;
+  font-weight: bold;
+  text-decoration: underline;
+  text-align: center;
+}
+table {
+  width: 80%;
+  margin: 0 auto;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th{
+  font-size: 3rem;
+  background-color: lightblue;
+}
+tr{
+  font-size: 2rem;
+  font-weight: bold;
+}
+td span{
+  padding-left: 1rem;
+}
+th, 
+tr, 
+td{
+  border: 1px solid black;
+  padding: 2rem;
+}
+td:not(:first-of-type){
+  padding-left: 5rem;
+  width: 38%;
+}
+img {
+  /* Imagenes responsivas */
+  max-width: 100%;
 }
 .contenedor {
-    /* Toma todo el espacio disponible, siempre y cuando no se pase de 1200px */
-    max-width: 120rem;
-    width: 95%;
-    margin: 0 auto;
+  width: 95%; /* Voy a usar el 95% de la pantalla */
+  max-width: 120rem; /* Tomando como maximo 1200px */
+  margin: 0 auto;
 }
-/* HEADER */
+/** HEADER **/
 header .cabecera{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-top: 1.5rem;
+  height: 30rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 header .cabecera a{
-    flex: 0 0 calc(50% - 5rem);
+  flex: 0 0  calc(30% - 2rem);
+}
+header .libro-git{
+  display: flex;
+  justify-content: center;
+  
+}
+header a{
+  color: black;
+  padding: 1rem;
+  font-family: 'Grenze Gotish';
+  font-size: 3.3rem;
+  font-weight: 900;
+  text-decoration: underline;
+
+}
+header .libro-git a i{
+  margin-right: 2rem;
 }
 
-@media (min-width: 768px) {
-    header .cabecera a{
-        flex: 0 0 calc(30% - 5rem);
-    }
+/** MAIN **/
+/* .consola */
+div.consola-lista {
+  display: none;
 }
-@media (min-width: 1023px) {
-    header .cabecera a{
-        flex: 0 0 calc(20% - 5rem);
-    }
-    
+
+
+
+/* .git-basico */
+.git-basico h2{
+  margin-top: 3rem;
 }
-.libro{
-    display: flex;
-    justify-content: center;
-}
-.libro-git{
-    color: black;
-    text-decoration: none;
-    font-size: 4rem;
-    font-family: 'Grenze Gotisch', cursive;
-    font-weight: 900;
-    padding: 1.5rem;
-}
-.libro-git i{
-    margin-right: 20px;
-}
-@media (min-width: 768px) {
-    .libro-git{
-        font-size: 4.5rem;
-    }
-}
-@media (min-width: 1023px) {
-    .libro-git{
-        font-size: 5.5rem;
-    }
-}
-nav.que-son{
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 1.3rem;
-    
-}
-nav.que-son a{
-    color: black;
-    text-decoration: none;
-    font-family: 'Grenze Gotisch', cursive;
-    font-weight: 900;
-    font-size: 3.5rem;
-}
-nav.que-son a:hover{
-    text-decoration: underline;
+.git-basico table td:first-of-type{
+  width: 20%;
 }
